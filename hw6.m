@@ -9,8 +9,8 @@ title('uncompensated TF root locus');
 
 % compensated
 figure;
-num = conv(2.145, conv([1 6], [1 0.53215]));
-den = conv([1 0.01], conv([1 1.52], conv([1 0], conv([1 1], [1 3]))));
+num = conv(2.116, conv([1 6], [1 0.53215]));
+den = conv([1 0.01], conv([1 1.28], conv([1 0], conv([1 1], [1 3]))));
 tf1 = tf(num , den); 
 rlocus(tf1);
 title('compensated TF root locus'); 
